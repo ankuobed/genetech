@@ -1,0 +1,30 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+    height: fit-content;
+    background-color: rgb(48, 48, 48);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.service__icon {
+    color: lime;
+    margin: 18px 0;
+}
+
+.service__title {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.service__list {
+    text-align: center;
+    font-size: 15px;
+    color: #c5c5c5;
+}

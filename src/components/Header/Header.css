@@ -1,0 +1,49 @@
+.header {
+    z-index: 100;
+    background-color: #005700;
+}
+
+.header > main {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header__logo {
+    transition: transform 1s ease, filter 1s ease;
+    margin-right: auto;
+    color:  white;
+    transform: translateX(250px);
+    filter: blur(15px);
+}
+
+.header__options {
+   width: 60%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.header__option {
+    font-weight: bold;
+    font-family: montserrat;
+    color: lime;
+    font-size: 17px;
+}
+
+.logo__G {
+    transition: font-size 1s ease, color 1s ease;
+}
+
+.logo__T {
+    position: relative;
+    transition: transform 1s ease, font-size 1s ease;
+}
+
+.logo__ene, .logo__ech {
+    transition: opacity 1s ease;
+}
+
+.header__logo h2 {
+    display: flex;
+    flex-direction: row;
+}

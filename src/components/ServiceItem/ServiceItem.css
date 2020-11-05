@@ -28,3 +28,26 @@
     font-size: 15px;
     color: #c5c5c5;
 }
+
+.service__soonContent {
+    margin: 0;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px;
+    transform: rotate(-39deg) translate(-25px, -18px);
+}
+
+.service__soonCon {
+    background: linear-gradient(30deg, #002e00, lime);
+    clip-path: polygon(0 0, 0% 100%, 69% 0);
+    border-top-left-radius: 5px;
+}
+
+.service__soon {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: -70px;
+}

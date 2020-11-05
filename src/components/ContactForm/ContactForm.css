@@ -9,12 +9,23 @@
     margin-bottom: 20px;
 }
 
+label {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+label span {
+    color: lime;
+}
+
 .contactForm input {
     padding: 10px 7px;
     border-radius: 3px;
     border: none;
     outline: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
     font-family: montserrat;
     background-color: #525252;
     color: white;
@@ -34,6 +45,7 @@
     font-family: montserrat;
     background-color: #525252;
     color: white;
+    font-size: 17px;
 }
 
 .contactForm button {

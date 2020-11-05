@@ -42,20 +42,15 @@ const Home = () => {
                                 <ServiceItem
                                     title='web development'
                                     Icon={Web}
+                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
                                 />
                             </FadeInSection>
 
                             <FadeInSection>
                                 <ServiceItem
-                                    title='app development'
+                                    title='mobile development'
                                     Icon={Apps}
-                                />
-                            </FadeInSection>
-                                
-                            <FadeInSection>
-                                <ServiceItem
-                                    title='cybersecurity'
-                                    Icon={Security}
+                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
                                 />
                             </FadeInSection>
 
@@ -63,6 +58,16 @@ const Home = () => {
                                 <ServiceItem
                                     title='graphic design'
                                     Icon={Wallpaper}
+                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
+                                />
+                            </FadeInSection>
+
+                            <FadeInSection>
+                                <ServiceItem
+                                    title='cybersecurity'
+                                    Icon={Security}
+                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
+                                    isComingSoon
                                 />
                             </FadeInSection>
                         </div>

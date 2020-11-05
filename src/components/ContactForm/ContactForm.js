@@ -13,22 +13,22 @@ const ContactForm = () => {
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
+            <label>Name <span>*</span></label>
             <input
                 type='text'
-                placeholder='name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
 
+            <label>Email <span>*</span></label>
             <input
                 type='email'
-                placeholder='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
 
+            <label>Message <span>*</span></label>
             <textarea
-                placeholder='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />      

@@ -40,7 +40,7 @@
 }
 
 .service__soonCon {
-    background: linear-gradient(30deg, #002e00, lime);
+    background: linear-gradient(30deg, #002e00, yellowgreen);
     clip-path: polygon(0 0, 0% 100%, 69% 0);
     border-top-left-radius: 5px;
 }

@@ -75,6 +75,14 @@ label span {
     background-color: #239229;
 }
 
+.MuiCircularProgress-circle {
+    color: white;
+}
+
+.MuiCircularProgress-root {
+    margin-left: 3px;
+}
+
 @media(min-width: 600px) {
     .contactForm {
         width: 65%;

@@ -20,7 +20,7 @@ const ContactForm = () => {
             body: JSON.stringify({ name, email, message })
         }).then(res => {
             setLoading(true);
-            if(!(res.status === 422)) {
+            if(res.status === 422) {
                 return res.json().then(err => setError(err))
             }
           })

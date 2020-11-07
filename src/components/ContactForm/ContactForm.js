@@ -6,12 +6,10 @@ const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [error, setError] = useState(null)
-    const [loading, setLoading] = useState(false);
 
     //https://genetech-backend.herokuapp.com/contact
     const handleSubmit = (e) => {
         e.preventDefault()
-        setLoading(true);
         fetch('https://genetech-backend.herokuapp.com/contact', {
             method: 'POST',
             headers: {
@@ -19,7 +17,6 @@ const ContactForm = () => {
             },
             body: JSON.stringify({ name, email, message })
         }).then(res => {
-            setLoading(true);
             if(res.status === 422) {
                 return res.json().then(err => setError(err))
             }

@@ -24,7 +24,7 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
-        axios.post('http://localhost:5000/contact', { name, email, message})
+        axios.post('https://genetech-backend.herokuapp.com/contact', { name, email, message})
             .then(res => {
                 setLoading(false)
                 clearFields()

@@ -29,6 +29,17 @@ label span {
     border-radius: 5px;
 }
 
+.contactForm__success {
+    color: lime;
+    margin-bottom: 15px;
+    font-size: 15px;
+    background-color: #003800;
+    padding: 12px;
+    border: 2px solid lime;
+    border-radius: 5px;
+}
+
+
 .contactForm input {
     padding: 10px 7px;
     border-radius: 3px;

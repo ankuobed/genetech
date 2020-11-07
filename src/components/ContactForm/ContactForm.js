@@ -1,38 +1,49 @@
 import React, { useState } from 'react'
-import './ContactForm.css'
 import { CircularProgress } from '@material-ui/core'
+import axios from 'axios'
+
+import './ContactForm.css'
 
 const ContactForm = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [error, setError] = useState(null)
+    const [success, setSuccess] = useState(null)
     const [loading, setLoading] = useState(false)
+
+    const clearFields = () => {
+        setError('')
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
 
     //https://genetech-backend.herokuapp.com/contact
     //http://localhost:5000/contact
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
-        fetch('https://genetech-backend.herokuapp.com/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ name, email, message })
-        }).then(res => {
-            setLoading(false)
-            if(res.status === 422) {
-                res.json().then(err => setError(err))
-            }
-          })
-          .catch(err => console.log(err));  
+        axios.post('http://localhost:5000/contact', { name, email, message})
+            .then(res => {
+                setLoading(false)
+                clearFields()
+                setSuccess('Message sent successfully')
+            })
+            .catch(err => {
+                setLoading(false)
+                setSuccess('')
+                setError(err.response.data)
+            })
     }
 
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
+
             {error&& <p className='contactForm__error'>{error}</p>}
+            {success&& <p className='contactForm__success'>{success}</p>}
+
             <label>Name <span>*</span></label>
             <input
                 type='text'

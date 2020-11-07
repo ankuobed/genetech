@@ -13,7 +13,7 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
-        fetch('http://localhost:5000/contact', {
+        fetch('https://genetech-backend.herokuapp.com/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

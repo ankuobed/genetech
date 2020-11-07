@@ -28,7 +28,7 @@ const ContactForm = () => {
             .then(res => {
                 setLoading(false)
                 clearFields()
-                setSuccess('Message sent successfully')
+                setSuccess(res.data)
             })
             .catch(err => {
                 setLoading(false)

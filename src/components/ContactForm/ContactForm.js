@@ -7,7 +7,7 @@ const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [error, setError] = useState(null)
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     //https://genetech-backend.herokuapp.com/contact
     //http://localhost:5000/contact

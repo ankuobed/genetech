@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { CircularProgress } from '@material-ui/core'
+import { Error, Check } from '@material-ui/icons'
 import axios from 'axios'
 
 import './ContactForm.css'
@@ -33,16 +34,18 @@ const ContactForm = () => {
             .catch(err => {
                 setLoading(false)
                 setSuccess('')
-                setError(err.response.data)
+                if(err.response) {
+                    setError(err.response.data)
+                } else {
+                    setError('Network too slow or inactive')
+                }
+                
             })
     }
 
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
-
-            {error&& <p className='contactForm__error'>{error}</p>}
-            {success&& <p className='contactForm__success'>{success}</p>}
 
             <label>Name <span>*</span></label>
             <input
@@ -63,6 +66,9 @@ const ContactForm = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />      
+
+            {error&& <p className='contactForm__error'><Error />{error}</p>}
+            {success&& <p className='contactForm__success'><Check />{success}</p>}
 
             <button>SUBMIT {loading&& <CircularProgress size={16} />}</button>
         </form>

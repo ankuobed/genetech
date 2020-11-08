@@ -19,6 +19,7 @@ const Home = () => {
     const contactRef = useRef()
 
     return (
+        
         <div className='home'>
             <Header/>
 

@@ -89,6 +89,13 @@
     transform: skewY(-2deg)
 }
 
+.modal {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 600px) {
    .about {
        margin-top: 50px;

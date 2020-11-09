@@ -22,9 +22,9 @@ label span {
 .contactForm__error {
     color: #fa7544;
     margin-bottom: 15px;
-    font-size: 15px;
+    font-size: 13px;
     background-color: #2c0c00;
-    padding: 12px;
+    padding: 8px;
     border: 2px solid #a74724;
     border-radius: 5px;
     display: flex;
@@ -33,14 +33,15 @@ label span {
 
 .contactForm__error > .MuiSvgIcon-root, .contactForm__success > .MuiSvgIcon-root {
     margin-right: 5px;
+    font-size: 15px;
 }
 
 .contactForm__success {
     color: lime;
     margin-bottom: 15px;
-    font-size: 15px;
-    background-color: #003800;
-    padding: 12px;
+    font-size: 13px;
+    background-color: #003100;
+    padding: 8px;
     border: 2px solid #009900;
     border-radius: 5px;
     display: flex;

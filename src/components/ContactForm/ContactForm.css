@@ -49,8 +49,8 @@ label span {
 }
 
 
-.contactForm input {
-    padding: 10px 7px;
+.contactForm .MuiInput-root {
+    padding: 6px;
     border-radius: 3px;
     border: none;
     outline: none;
@@ -63,19 +63,6 @@ label span {
 
 .contactForm input::placeholder, .contactForm textarea::placeholder {
     color: white;
-}
-
-.contactForm textarea {
-    padding: 10px 7px;
-    border-radius: 3px;
-    border: none;
-    outline: none;
-    margin-bottom: 10px;
-    height: 100px;
-    font-family: montserrat;
-    background-color: #525252;
-    color: white;
-    font-size: 17px;
 }
 
 .contactForm button {

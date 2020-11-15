@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CircularProgress } from '@material-ui/core'
+import { CircularProgress, Input, TextField } from '@material-ui/core'
 import { Error, Check } from '@material-ui/icons'
 import axios from 'axios'
 
@@ -48,23 +48,28 @@ const ContactForm = () => {
             <h1>Contact Us</h1>
 
             <label>Name <span>*</span></label>
-            <input
+            <Input
                 type='text'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                color='secondary'
             />
 
             <label>Email <span>*</span></label>
-            <input
+            <Input
                 type='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                color='secondary'
             />
 
             <label>Message <span>*</span></label>
-            <textarea
+            <TextField
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                multiline={true}
+                rows='10'
+                color='secondary'
             />      
 
             {error&& <p className='contactForm__error'><Error />{error}</p>}

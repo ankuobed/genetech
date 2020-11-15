@@ -1,6 +1,6 @@
 .header {
     z-index: 100;
-    background-color: #005700;
+    background-color: #242424;
 }
 
 .header > main {
@@ -27,7 +27,7 @@
     font-weight: bold;
     font-family: montserrat;
     color: lime;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .logo__G {

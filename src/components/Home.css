@@ -1,7 +1,7 @@
 .hero {
     height: 300px;
-    background: #005700;
     display: flex;
+    background-color: #242424;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,41 +13,64 @@
 
 .hero > p {
     font-size: 15px;
+    margin-top: 10px;
 }
 
-.hero__actionServices {
+.hero__actionContact {
     padding: 12px 20px;
-    width: fit-content;
+    width: 200px;
     border: none;
     color: white;
     background-color: #2ebe35;
     margin-right: 10px;
-    border-radius: 5px;
-    font-size: medium;
+    border-radius: 3px;
+    font-size: 17px;
     outline: none;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
     font-family: montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero .MuiSvgIcon-root {
+    animation: arrow infinite 2s ease;
+    transition: transform 2s ease;
+   
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(6px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(6px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(6);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .hero__actionServices:hover {
     background-color:  #229228;
-}
-
-.hero__actionContact {
-    padding: 10px 18px;
-    width: fit-content;
-    border: none;
-    color: white;
-    border: 2px solid #2ebe35;
-    background-color: transparent;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-size: medium;
-    outline: none;
-    margin-top: 20px;
-    font-weight: bold;
-    font-family: montserrat;
 }
 
 .hero__actionContact:hover {
@@ -69,6 +92,17 @@
     flex-direction: column;
 }
 
+.home h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: lime;
+}
+
+.hero h1, .hero p {
+    letter-spacing: 1px;
+}
 
 .about {
     background-color: #242424;
@@ -87,6 +121,11 @@
 
 .about__content {
     transform: skewY(-2deg)
+}
+
+.about p {
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 
 .modal {

@@ -35,13 +35,14 @@
     height: 80px;
     text-align: center;
     font-weight: lighter;
+    font-size: 13px;
     padding: 10px;
-    transform: rotate(-39deg) translate(-25px, -18px);
+    transform: rotate(-48deg) translate(-23px, -28px);
 }
 
 .service__soonCon {
     background: linear-gradient(30deg, #002e00, yellowgreen);
-    clip-path: polygon(0 0, 0% 100%, 69% 0);
+    clip-path: polygon(0 0, 0% 100%, 53% 0);
     border-top-left-radius: 5px;
 }
 

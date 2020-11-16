@@ -25,7 +25,7 @@ const Home = () => {
 
             <div className='hero'>
                 <h1>Explore, <span>Innovative</span>, Build.</h1>
-                <p>Innovative work, innovate research for innovative people</p>
+                <p>Innovative work, innovate research for innovative people.</p>
                 <div className='hero__actions'>
                     <button onClick={() => scrollToContent(contactRef)} className='hero__actionContact'>Contact Us <ArrowDownward /> </button>
                 </div>
@@ -37,13 +37,13 @@ const Home = () => {
             <main id='mainContent'>
                  <div>
                     <div ref={servicesRef} className='services container'>
-                        <h1>What We Do</h1>
+                        <h1>What We <span>Do</span></h1>
                         <div className='services__content'>
                             <FadeInSection>
                                 <ServiceItem
                                     title='web development'
                                     Icon={Web}
-                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
+                                    subtitles={['frontend', 'responsive design', 'secure backend', 'scalable']}
                                 />
                             </FadeInSection>
 
@@ -51,7 +51,7 @@ const Home = () => {
                                 <ServiceItem
                                     title='mobile development'
                                     Icon={Apps}
-                                    subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
+                                    subtitles={['IOS & Android', 'responsive design', 'optimized code base', 'security']}
                                     isComingSoon
                                 />
                             </FadeInSection>

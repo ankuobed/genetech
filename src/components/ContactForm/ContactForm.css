@@ -65,6 +65,10 @@ label span {
     color: white;
 }
 
+.MuiInput-underline-24:hover:not(.MuiInput-disabled-23):not(.MuiInput-focused-22):not(.MuiInput-error-25):before {
+    border-bottom: 2px solid lime !important;
+}
+
 .contactForm button {
     padding: 13px 20px;
     width: 100%;

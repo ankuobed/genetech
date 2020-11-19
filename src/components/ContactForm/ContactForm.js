@@ -75,7 +75,7 @@ const ContactForm = () => {
             {error&& <p className='contactForm__error'><Error />{error}</p>}
             {success&& <p className='contactForm__success'><Check />{success}</p>}
 
-            <button>SUBMIT {loading&& <CircularProgress size={16} />}</button>
+            <button>{loading? <CircularProgress size={17} /> : 'SUBMIT'}</button>
         </form>
     )
 }

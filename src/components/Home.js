@@ -8,6 +8,13 @@ import Footer from './Footer/Footer'
 import FadeInSection from './FadeInSection/FadeInSection'
 import ContactForm from './ContactForm/ContactForm'
 
+// images
+import webImg from '../images/web-programming.png'
+import appImg from '../images/app.png'
+import videoImg from '../images/video-editing.png'
+import graphicImg from '../images/graphic-design.png'
+import cyberImg from '../images/cyber.png'
+
 export const aboutRef = createRef()
 
 function scrollToContent(content) {
@@ -42,7 +49,7 @@ const Home = () => {
                             <FadeInSection>
                                 <ServiceItem
                                     title='web development'
-                                    Icon={Web}
+                                    img={webImg}
                                     subtitles={['frontend', 'responsive design', 'secure backend', 'scalable']}
                                 />
                             </FadeInSection>
@@ -50,7 +57,7 @@ const Home = () => {
                             <FadeInSection>
                                 <ServiceItem
                                     title='mobile development'
-                                    Icon={Apps}
+                                    img={appImg}
                                     subtitles={['IOS & Android', 'responsive design', 'optimized code base', 'security']}
                                     isComingSoon
                                 />
@@ -59,7 +66,7 @@ const Home = () => {
                             <FadeInSection>
                                 <ServiceItem
                                     title='video & movie editing'
-                                    Icon={VideoLibrary}
+                                    img={videoImg}
                                     subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
                                     isComingSoon
                                 />
@@ -68,7 +75,7 @@ const Home = () => {
                             <FadeInSection>
                                 <ServiceItem
                                     title='graphic design'
-                                    Icon={Wallpaper}
+                                    img={graphicImg}
                                     subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
                                 />
                             </FadeInSection>
@@ -76,7 +83,7 @@ const Home = () => {
                             <FadeInSection>
                                 <ServiceItem
                                     title='cybersecurity'
-                                    Icon={Security}
+                                    img={cyberImg}
                                     subtitles={['reputiamo', 'ammirabile sua', 'bene furon', 'di sue']}
                                     isComingSoon
                                 />

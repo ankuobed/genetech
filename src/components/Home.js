@@ -1,5 +1,5 @@
 import React, { createRef, useRef } from 'react'
-import { Web, Apps, Security, Wallpaper, VideoLibrary, ArrowDownward } from '@material-ui/icons'
+import { ArrowDownward } from '@material-ui/icons'
 
 import './Home.css'
 import Header from './Header/Header'

@@ -53,4 +53,5 @@
     justify-content: flex-start;
     width: 100%;
     margin-bottom: -70px;
+    z-index: 2;
 }

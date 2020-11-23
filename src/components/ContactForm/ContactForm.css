@@ -36,19 +36,6 @@ label span {
     font-size: 15px;
 }
 
-.contactForm__success {
-    color: lime;
-    margin-bottom: 15px;
-    font-size: 13px;
-    background-color: #003100;
-    padding: 8px;
-    border: 2px solid #009900;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
 .contactForm .MuiInput-root {
     padding: 6px;
     border-radius: 3px;
@@ -98,6 +85,22 @@ label span {
 .MuiCircularProgress-root {
     margin-left: 10px;
 
+}
+
+.success {
+    background-color: lightgreen;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.netError {
+    background-color: lightcoral;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
 }
 
 @media(min-width: 600px) {

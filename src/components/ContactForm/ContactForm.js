@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { CircularProgress, Input, TextField, Snackbar, SnackbarContent } from '@material-ui/core'
-import { Error, Check } from '@material-ui/icons'
+import { CircularProgress, Input, TextField, Snackbar} from '@material-ui/core'
+import { Error } from '@material-ui/icons'
 import axios from 'axios'
 
 import './ContactForm.css'

@@ -4,6 +4,7 @@ import { Error } from '@material-ui/icons'
 import axios from 'axios'
 
 import './ContactForm.css'
+import isLocalhost from '../../utils/isLocalhost'
 
 const ContactForm = () => {
     const [name, setName] = useState('')
@@ -21,12 +22,12 @@ const ContactForm = () => {
         setMessage('')
     }
 
-    //https://genetech-backend.herokuapp.com/contact
-    //http://localhost:5000/contact
+    const url = isLocalhost? 'http://localhost:5000/contact' : 'https://genetech-backend.herokuapp.com/contact'
+
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
-        axios.post('https://genetech-backend.herokuapp.com/contact', { name, email, message})
+        axios.post(url, { name, email, message})
             .then(res => {
                 setLoading(false)
                 clearFields()
